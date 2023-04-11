@@ -1,0 +1,14 @@
+.review-thread {
+  width: 60%;
+  margin: auto;
+  background-color: var(--primary-white);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent; /* Removes margin collapse */
+}
+
+@media screen and (max-width: 600px) {
+  .review-thread {
+    width: 100%;
+  }
+}

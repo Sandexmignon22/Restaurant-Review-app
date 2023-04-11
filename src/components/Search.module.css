@@ -1,0 +1,92 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 40%;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* .container::before {
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%
+} */
+
+.search {
+  width: 100%;
+  display: flex;
+  background-color: var(--primary-white);
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+.searchTerm {
+  width: 100%;
+  border-right: none;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  color: var(--color-main);
+  background: none;
+}
+
+.searchTerm:focus {
+  color: var(--color-main);
+}
+
+.searchButton {
+  border: none;
+  background: var(--color-main);
+  /* padding: 0.8rem 3rem; */
+  text-align: center;
+  color: var(--color-gray-200);
+  border-radius: 0.3rem 0 0 0.3rem;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0;
+  border: 1px solid var(--color-main);
+}
+
+.searchButton:hover {
+  color: var(--color-gray-600) !important;
+  background: var(--color-main);
+}
+
+.debug {
+  border: 2px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 95%;
+  }
+
+  .searchButton {
+    padding: 0.8rem 1.4rem;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.closeButton i {
+  color: red;
+}
