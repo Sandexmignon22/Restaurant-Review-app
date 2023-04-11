@@ -24,7 +24,7 @@ This is a web app that assists residents of bristol review restaurants
 
 ### Installation
 
--   git clone [Restaurant Review](https://github.com/officialyenum/restaurant-review-app.git)
+-   git clone [Restaurant Review](https://github.com/Sandexmignon22/Restaurant-Review-app.git)
 -   Run `npm install` to install packages.
 -   rename .env.example to .env and fill in your firebase credentials
 -   Run `npm start` to run the application in development mode.
